@@ -1,0 +1,59 @@
+.customHeader {
+  background-color: #1E1E1E;
+}
+
+.logoContainer {
+  /* Adicione estilos específicos para o logo se necessário */
+}
+
+.formacaoBtnsRow {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+
+.formacaoBtn {
+  width: 153px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: transparent;
+  color: #BABABA;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 18px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.formacaoBtn.active {
+  background: transparent;
+  color: #BABABA;
+}
+
+.formacaoBtn svg {
+  flex-shrink: 0;
+}
+
+.formacaoBtn:hover {
+  background: #2E2E2E;
+  color: #BABABA;
+}
+
+.formacaoBtn:focus,
+.formacaoBtn:active,
+.formacaoBtn:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.formacaoBtn:last-child {
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 

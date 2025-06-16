@@ -1,31 +1,14 @@
 import React from 'react';
-import './App.css';
+import Header from './components/Header/Header';
+import HeroSection from './components/HeroSection/HeroSection';
 
 function App() {
   return (
     <div className="App">
-      <header className="bg-dark text-white py-3">
-        <nav className="container">
-          <div className="d-flex justify-content-center gap-3">
-            <button className="btn btn-outline-light">Home</button>
-            <button className="btn btn-outline-light">About</button>
-            <button className="btn btn-outline-light">Projects</button>
-            <button className="btn btn-outline-light">Contact</button>
-          </div>
-        </nav>
-      </header>
-
+      <Header />
+      <HeroSection />
       <main className="container py-5">
-        <section id="introduction" className="mb-5">
-          <div className="row justify-content-center">
-            <div className="col-md-8 text-center">
-              <h1 className="display-4 mb-4">Welcome to My Portfolio</h1>
-              <p className="lead">
-                I'm a passionate developer focused on creating amazing web experiences.
-              </p>
-            </div>
-          </div>
-        </section>
+       
 
         <section id="about" className="mb-5">
           <div className="row justify-content-center">
