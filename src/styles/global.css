@@ -1,7 +1,9 @@
+/* Estilos globais */
+
 .App {
   text-align: center;
   min-height: 100vh;
-  background-color: #f8f9fa;
+  background: #202020;
 }
 
 .App-logo {
