@@ -7,7 +7,7 @@ const Header: React.FC = () => (
       <div className={styles.logoContainer}>
         <svg width="56" height="48" viewBox="0 0 56 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6 32 Q18 10 50 38" stroke="#464646" strokeWidth="2.5" fill="none" opacity="0.18" />
-          <text x="8" y="38" fontFamily="serif" fontSize="32" fill="#888" opacity="0.7">MT</text>
+          <text x="8" y="38" fontFamily="serif" fontSize="32" fill="#888" opacity="0.4">MT</text>
         </svg>
       </div>
       <div className={styles.formacaoBtnsRow + ' d-flex'} style={{gap: '12px', marginRight: 5, marginTop: 16, marginLeft: 0, marginBottom: 0, marginInlineStart: 'auto'}}>
