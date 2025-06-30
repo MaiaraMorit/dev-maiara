@@ -1,6 +1,6 @@
 .heroSection {
   width: 1340px;
-  height: 540px;
+  height: 480px;
   background: #222222;
   box-shadow: 0 4px 40px 0 rgba(0, 0, 0, 0.097);
   border-radius: 2px !important;
@@ -83,11 +83,22 @@
 .separator {
   width: 902px;
   height: 1px;
-  background-color: #353535;
+  background: linear-gradient(90deg, rgba(53, 53, 53, 0.2) 0%, #353535 50%, rgba(53, 53, 53, 0.2) 100%);
   position: absolute;
   left: 33px;
   top: 290px;
   margin-top: 20px;
+  animation: scrollLine 2s linear infinite;
+  background-size: 200% 100%;
+}
+
+@keyframes scrollLine {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
 .buttonContainer {
@@ -405,4 +416,15 @@
   60% {
     transform: translateX(-50%) translateY(-4px);
   }
+}
+
+.avatarRight {
+  position: absolute;
+  left: 780px;
+  top: 14px;
+  width: 379px;
+  height: 534px;
+  object-fit: contain;
+  z-index: 10;
+  pointer-events: none;
 } 

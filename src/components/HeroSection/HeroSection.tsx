@@ -91,20 +91,6 @@ const HeroSection: React.FC = () => {
       return;
     }
 
-    // Verificar se não é spam (palavras suspeitas)
-    const spamWords = ['viagra', 'casino', 'loan', 'credit', 'free money'];
-    const messageLower = emailData.message.toLowerCase();
-    const subjectLower = emailData.subject.toLowerCase();
-    
-    const hasSpamWords = spamWords.some(word => 
-      messageLower.includes(word) || subjectLower.includes(word)
-    );
-    
-    if (hasSpamWords) {
-      alert('Mensagem bloqueada por conter conteúdo suspeito.');
-      return;
-    }
-
     setIsSending(true);
     
     try {
@@ -226,12 +212,8 @@ const HeroSection: React.FC = () => {
             </button>
           </div>
         </div>
+        <img src="/Avatar.png" alt="Avatar" className={styles.avatarRight} />
         <div className={styles.rightPanel}></div>
-        <div className={styles.scrollIndicator} onClick={handleScrollDown}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M7 10L12 15L17 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </div>
       </section>
 
       {/* Modal de Email */}
