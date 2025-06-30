@@ -3,7 +3,17 @@
 .App {
   text-align: center;
   min-height: 100vh;
-  background: #202020;
+  background: #1D1D1D;
+}
+
+body {
+  background: #1D1D1D;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: #1D1D1D;
 }
 
 .App-logo {
@@ -58,16 +68,16 @@ section {
 }
 
 #introduction {
-  background-color: white;
+  background-color: transparent;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   padding: 3rem 1rem;
 }
 
 #about {
-  background-color: white;
+  background-color: transparent;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: rgba(0,0,0,0.05);
   padding: 3rem 1rem;
 }
 

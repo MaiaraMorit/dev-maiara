@@ -20,9 +20,6 @@ Para rodar este projeto, você precisa ter instalado em sua máquina:
 ## 🔧 Como Rodar o Projeto
 
 1. Clone este repositório
-```bash
-git clone [URL_DO_REPOSITÓRIO]
-```
 
 2. Entre na pasta do projeto
 ```bash
