@@ -1,0 +1,253 @@
+.careerSection {
+  width: 1340px;
+  min-height: 600px;
+  background: #1E1E1E;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 2px !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+  margin-bottom: 50px;
+  padding: 40px 0;
+}
+
+.careerContainer {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 40px;
+}
+
+.careerTitle {
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 50px 0;
+  position: relative;
+}
+
+.careerTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #F7933D, transparent);
+  border-radius: 2px;
+}
+
+.timelineContainer {
+  position: relative;
+  padding-left: 60px;
+}
+
+.timelineContainer::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, #F7933D 0%, #404040 50%, #404040 100%);
+  border-radius: 1px;
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.timelineItem:last-child {
+  margin-bottom: 0;
+}
+
+.timelineBadge {
+  position: absolute;
+  left: -60px;
+  top: 0;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.badge {
+  background: #2A2A2A;
+  border: 2px solid #404040;
+  border-radius: 20px;
+  padding: 6px 12px;
+  color: #BABABA;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 80px;
+  transition: all 0.3s ease;
+}
+
+.currentBadge {
+  background: #F7933D;
+  border-color: #F7933D;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.timelineContent {
+  background: #2A2A2A;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 24px;
+  margin-left: 20px;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.timelineContent:hover {
+  border-color: #505050;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.experienceHeader {
+  margin-bottom: 20px;
+}
+
+.jobTitle {
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.companyInfo {
+  margin-bottom: 6px;
+}
+
+.companyName {
+  color: #F7933D;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.companyLocation {
+  color: #BABABA;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.period {
+  color: #888888;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.experienceDescription {
+  margin-bottom: 20px;
+}
+
+.descriptionItem {
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0 0 12px 0;
+  text-align: left;
+  position: relative;
+  padding-left: 16px;
+}
+
+.descriptionItem::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #F7933D;
+  font-weight: bold;
+}
+
+.descriptionItem:last-child {
+  margin-bottom: 0;
+}
+
+.technologiesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.technologyTag {
+  background: #404040;
+  color: #BABABA;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 12px;
+  border: 1px solid #505050;
+  transition: all 0.2s ease;
+}
+
+.technologyTag:hover {
+  background: #505050;
+  color: #FFFFFF;
+  border-color: #F7933D;
+}
+
+/* Responsividade */
+@media (max-width: 1400px) {
+  .careerSection {
+    width: 95%;
+    max-width: 1340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .careerContainer {
+    padding: 0 20px;
+  }
+  
+  .timelineContainer {
+    padding-left: 40px;
+  }
+  
+  .timelineContainer::before {
+    left: 20px;
+  }
+  
+  .timelineBadge {
+    left: -40px;
+    width: 40px;
+  }
+  
+  .badge {
+    min-width: 60px;
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+  
+  .timelineContent {
+    margin-left: 10px;
+    padding: 16px;
+  }
+  
+  .jobTitle {
+    font-size: 18px;
+  }
+  
+  .companyName {
+    font-size: 14px;
+  }
+} 
