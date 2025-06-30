@@ -222,6 +222,27 @@
   overflow-y: auto;
   border: 1px solid #404040;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  scrollbar-width: thin;
+  scrollbar-color: #404040 #222222;
+}
+
+.modalContent::-webkit-scrollbar {
+  width: 6px;
+}
+
+.modalContent::-webkit-scrollbar-track {
+  background: #222222;
+  border-radius: 3px;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 3px;
+  transition: background 0.2s ease;
+}
+
+.modalContent::-webkit-scrollbar-thumb:hover {
+  background: #505050;
 }
 
 .modalHeader {

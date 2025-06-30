@@ -14,13 +14,13 @@ const FormationSection: React.FC = () => {
     },
     {
       year: '2023',
-      title: 'Curso Fullstack',
+      title: 'Curso Desenvolvimento Fullstack',
       institution: 'Trybe',
       status: 'Concluído'
     },
     {
       year: '2024',
-      title: 'Curso JAVA',
+      title: 'Certificação em Java',
       institution: 'Trybe',
       status: 'Concluído'
     },
@@ -32,7 +32,7 @@ const FormationSection: React.FC = () => {
     },
     {
       year: '2025',
-      title: 'Curso de Figma',
+      title: 'Curso UI Desing com Figma',
       institution: 'Udemy',
       status: 'Concluído'
     }
